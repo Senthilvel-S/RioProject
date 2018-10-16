@@ -37,7 +37,7 @@ public class loginPage {
         return element;
 		
 	}
-	
+	// Common method used when loading icon appears
 	public static void spinnerWait(WebDriver driver) {
 		
 		do
