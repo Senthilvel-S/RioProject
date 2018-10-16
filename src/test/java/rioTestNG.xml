@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="RIO">
+
+<parameter name="appURL" value="https://3mocc-sl3-staging.3m.com"/>
+<parameter name="browserType" value="chrome"/>
+
+<!--  <test name="TO check login page">
+    <classes>
+           <class name="Tests.loginPage_Test" />
+      </classes>
+ </test> -->
+
+
+<!--
+To choose Aligner upper pass value as 'Only Upper Aligner' 
+To choose Aligner lower pass value as 'Only lower Aligner'
+To choose Retainer upper pass value as 'Only Upper Retainer' 
+To choose Retainer lower pass value as 'Only lower Retainer'
+To choose Aligner Lower arch with Opposing arch pass value as 'Lower Aligner with Opposing Arch'
+To choose Aligner Upper arch with Opposing arch pass value as 'Upper Aligner with Opposing Arch'
+To choose both arches Aligner & Retainer pass value as 'Both Arches'
+To choose both arches Aligner pass value as 'Both Aligner'
+To choose both arches Retainer pass value as 'Both Retainer'
+To choose Expedite pass value as 'Yes/No'
+For Retainer: To choose shippingInfo value as 'AlternativeShippingAddress' pass value as 'AlternativeShippingAddress'
+Provide the already existing patient in 'existing_patient' field
+Provide the already existing case ID in 'caseID'[Ex: DP67QS] field / Provide as 'New case'
+Provide Intraoral Records as 'Scan' / 'Physical_Impression'
+If impression type is 'Physical Impression' provide valid date Ex: '08/02/2018'
+
+Need to handle DOB,
+ -->
+ 
+<parameter name="arches" value="Only Upper Retainer"/>
+<parameter name="expedite" value="No"/>
+<parameter name="retainer_fulfilloption" value="12"/>
+<parameter name="existing_patient" value="Senthil Patient_Auto"/>
+<parameter name="caseID" value="TKX2FD"/>
+<parameter name="impressionType" value="Physical_Impression"/>
+<parameter name="impressionDate" value="08/02/2018"/>
+<parameter name="shippingInfo" value="AlternativeShippingAddress"/>
+<test name="TO create an aligner/Retainer order">
+    <classes>
+           <class name="Tests.newOrder_Test" />
+      </classes>
+ </test>
+
+</suite>

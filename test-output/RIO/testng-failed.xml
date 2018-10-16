@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [RIO]" guice-stage="DEVELOPMENT">
+  <parameter name="existing_patient" value="Senthil Patient_Auto"/>
+  <parameter name="expedite" value="No"/>
+  <parameter name="impressionDate" value="08/02/2018"/>
+  <parameter name="retainer_fulfilloption" value="12"/>
+  <parameter name="caseID" value="TKX2FD"/>
+  <parameter name="shippingInfo" value="AlternativeShippingAddress"/>
+  <parameter name="appURL" value="https://3mocc-sl3-staging.3m.com"/>
+  <parameter name="impressionType" value="Physical_Impression"/>
+  <parameter name="browserType" value="chrome"/>
+  <parameter name="arches" value="Only Upper Retainer"/>
+  <test thread-count="5" name="TO create an aligner/Retainer order(failed)">
+    <classes>
+      <class name="Tests.newOrder_Test">
+        <methods>
+          <include name="setUp"/>
+          <include name="closeBrowser"/>
+          <include name="newPatientOrder" invocation-numbers="0"/>
+          <include name="setDriver"/>
+        </methods>
+      </class> <!-- Tests.newOrder_Test -->
+    </classes>
+  </test> <!-- TO create an aligner/Retainer order(failed) -->
+</suite> <!-- Failed suite [RIO] -->
