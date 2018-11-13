@@ -257,6 +257,7 @@ public class Patient_orderWizard {
 	{
 		try
 		{
+			
 			//String popUp = driver.findElement(By.xpath("//div[@aria-describedby='duplicatePatient']")).getAttribute("style");			
 				loginPage.spinnerWait(driver);
 				String title = driver.findElement(By.xpath("//div[@aria-describedby='duplicatePatient']/div[2]/h1")).getText();

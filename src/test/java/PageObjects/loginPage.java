@@ -9,6 +9,7 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 public class loginPage {
 	
 	static WebElement element;
+	
 
 	 public static WebElement UserName(WebDriver driver){
 		 
